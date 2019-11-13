@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "employees",
+  "info": {
+    "name": "employee",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "company": {
+      "model": "company",
+      "via": "employees"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
