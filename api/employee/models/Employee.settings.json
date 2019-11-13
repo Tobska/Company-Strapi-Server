@@ -7,15 +7,24 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
+    "last_name": {
+      "type": "string"
+    },
     "company": {
       "model": "company",
       "via": "employees"
     },
-    "name": {
+    "first_name": {
+      "type": "string"
+    },
+    "position": {
       "type": "string"
     }
   }
