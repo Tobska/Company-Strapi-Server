@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "DELETE",
+      "path": "/companyEmployees/:id",
+      "handler": "Company.deleteEmployees",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }

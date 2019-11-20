@@ -5,4 +5,20 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {
+  /**
+   * Promise to delete employees under company
+   *
+   * @return {Promise}
+   */
+
+  deleteEmployees(params) {
+    return new Promise(function (resolve, reject) {
+      const result = strapi
+        .query('employee')
+        .delete({ company: Number(params.id) })
+
+      resolve(result)
+    })
+  }
+};

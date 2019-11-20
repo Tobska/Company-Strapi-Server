@@ -1,0 +1,16 @@
+module.exports = {definition: `
+    type deleteCompanyEmployeesPayload {
+      employees: [Employee]
+    }
+  `,
+  mutation: `deleteCompanyEmployees(id: ID!): deleteCompanyEmployeesPayload`,
+  resolver: {
+    Mutation: {
+      deleteCompanyEmployees: {
+        description: 'Delete Employees under a Company',
+        policies: [],
+        resolver: 'Company.deleteEmployees'
+      }
+    },
+  },
+};
