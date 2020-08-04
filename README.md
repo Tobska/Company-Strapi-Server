@@ -1,3 +1,3 @@
-# Strapi application
+# Backend for sample project for viewing, editing, and deleting companies
 
-A quick description of your strapi application
+Used Strapi to build this project.
